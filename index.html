@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Madihah</title>
+</head>
+<h1> heading 1</h1>
+<h2> heading 2</h2><!--the higher the number, the smaller the header size-->
+<h1> heading 1</h1>
+<body>
+<p>Hello World!</p>
+<hr/> <!--to create line--> 
+<pre> My name is 
+               Madihah
+</pre>
+
+<!-- TO CREATE LINK-->
+<a href="https://www.google.com/">
+    Take me to Google!
+</a> <!--to create link-->
+<p>
+    <a href="https://www.google.com/" target="_blank">
+        Take me to Google!
+    </a> <!--to open link in new tab-->
+</p>
+<p>
+    <a href="mailto:madihahibrahim31@gmail.com" target="_blank">
+        Send email!
+    </a> <!--to send email-->
+</p>
+
+<!--TO PUT IMAGE-->
+<!--for image in same directory-->
+<p>This is a picture</p>
+<img src="parrot.jpeg" alt="Parrot">
+<!--for image in same directory but new folder-->
+<p>
+    <img src="/New folder/parrot.jpeg" alt="parrot">
+</p>
+
+<!--IMAGE DIMENSIONS - SET SIZE GAMBAR-->
+<img src="parrot.jpeg" alt="dog" width="500" height="500">
+
+<!-- ADD LINK TO PICTURE-->
+<a href="https://www.google.com/">
+    <img src="parrot.jpeg" alt="Parrot">
+</a>
+<a href="https://www.google.com/" target="_blank">
+    <img src="parrot.jpeg" alt="Parrot"/>
+</a> 
+
+<!--UNORDER LIST-->
+<p>Unorder List</p>
+<ul style="list-style-type:none;"> <!--after type list-style-type: akan keluar jenis2 bullet yang ada-->
+    <li>Coffee</li>
+</ul>
+<ul style="list-style-type: square;">
+    <li>Tea</li>
+</ul>
+<ul style="list-style-type: circle;">
+    <li>Milk</li>
+</ul>
+
+<!--ORDER LIST-->
+<p>Order List</p>
+
+<ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+
+<ol type="A">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+
+<ol type="i">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+
+<ol start="50">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+
+<ol type="A" start="4">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+
+<!--NESTED LIST-->
+<p>Nested List</p>
+<ol >
+    <li>Coffee</li>
+    <li>Tea</li>
+    <ul>
+        <li>Black Tea</li>
+        <li>Jasmine Tea</li>
+    </ul>
+    <li>Milk</li>
+</ol>
+
+<!--TABLE-->
+<table>
+ <tr> <!--for row-->
+    <td>Drinks</td> <!--for column-->
+    <td>Price</td>
+ </tr>
+ <tr> 
+    <td>Coffee</td>
+    <td>$2</td>
+ </tr>
+ <tr> 
+    <td>Tea</td>
+    <td>$1</td>
+ </tr>
+ <tr> 
+    <td></td>
+    <td>$1</td> <!--FOR CASE ONLY HAVE PRICE-->
+ </tr>
+</table>
+
+<!--TABLE HEADER-->
+
+<table>
+    <tr> 
+       <th>Drinks</th> <!--th for header-->
+       <th>Price</th>
+    </tr>
+    <tr> 
+       <td>Coffee</td>
+       <td>$2</td>
+    </tr>
+    <tr> 
+       <td>Tea</td>
+       <td>$1</td>
+    </tr>
+    
+   </table>
+
+<p>Left header</p>
+<table>
+    <tr>
+        <th>Student 1</th>
+        <td>Roy</td>
+        <td>boy</td>
+    </tr>
+    <tr>
+        <th>Student 2</th>
+        <td>Mary</td>
+        <td>girl</td>
+    </tr>
+
+</table>
+
+<p>column width and height</p>
+<table>
+    <tr>
+        <th style="width:50%">Drink 1</th> <!--lebar column tukar kat th-->
+        <th>Drink 2</th>
+        <th>Drink 3</th>
+    </tr>
+    <tr style="height: 100px;"> <!--tinggi row kena tukar kat tr-->
+        <td>Coffee</td>
+        <td>Tea</td>
+        <td>Milk</td>
+    </tr>
+
+</table>
+
+<p>Colspan and Rowspan</p>
+<table>
+    <tr>
+        <th rowspan="2">ID</th>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Marks</th> 
+    </tr>
+    <tr>
+        <td>Physics</td>
+        <td>Add Math</td>
+    </tr>
+    <tr> 
+        <td>1001</td>
+        <td>Jack</td>
+        <td>70</td>
+        <td>90</td>
+    </tr>
+</table>
+
+<!--FORM INPUT-->
+<br>
+<p>FORM INPUT</p>
+<br>
+<label for="name">Name</label>
+<input type="text" id="name"/>
+<br>
+<br>
+<label for="pass">Password</label>
+<input type="password" id="pass"/>
+<br>
+<br>
+<p>Blood Group</p>
+<input type="radio" name="blood" id="A+">
+<label for="A+">A+</label>
+<input type="radio" name="blood" id="B+">
+<label for="B+">B+</label>
+<input type="radio" name="blood" id="O">
+<label for="O">O</label>
+<br>
+<br>
+<P>Existing condition</P>
+<input type="checkbox" id="pressure">
+<label for="pressure">Blood pressure</label>
+<input type="checkbox" id="diabetis">
+<label for="diabetis">Diabetis</label>
+
+<!--FORM INPUT ATTRIBUTES-->
+
+<br>
+<br>
+<p>FORM INPUT ATTRIBUTES</p>
+<label for="name">Name</label>
+<input type="text" id="name" maxlength="5" placeholder="Not more than 5 character">
+<br>
+<label for="id">Student ID</label>
+<input type="text" id="id" value="2024" > <!--Value ni macam predetermine value la so user sambung ke kat belakang-->
+
+<!--SELECT INPUT-->
+<br>
+<br>
+<p>SELECT ATTRIBUTE</p>
+<label for="hero">Who is your favourite hero?</label>
+<select id="hero">
+    <option value="spider">Spiderman</option>
+    <option value="super">Superman</option>
+    <option value="bat">Batman</option>
+    <option value="hulk">The Hulk</option>
+</select>
+
+<p>What is his superpower?</p>
+<textarea cols="30" rows="10"></textarea>
+</body>
+</html>
